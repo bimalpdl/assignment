@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body {
+    background-color: #f0f0f0; 
+    font-family: Arial, sans-serif;
+}
+
+header {
+
+    background-color: #183985;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #071944;
+    padding: 5px;
+}
+
+nav a {
+    
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+nav a:hover{
+    color:rgb(223, 127, 53);
+    cursor: pointer;
+}
+
+section {
+    padding: 20px;
+    color: blacks;
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #183985;
+    color: white;
+}
+marquee:hover{
+    color:red;
+    background-color: white;
+}
+marquee{
+    opacity: .7;
+}
+#pmc{
+    border-bottom: 2px solid red;
+    border-width:5%;
+}
+.body-container{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: evenly;
+    position: relative;
+    left: 500px;
+    
+}
+
+
+.background-image{}
+#side-image{
+    border-radius: 5%;
+    }
+
+
+
+/* Admission form css starts from here  */
+
+
+
+.master{
+        display: flex;                 
+        justify-content:space-between;
+        align-items:center;
+        
+            }
+            .child input, .child label .child select{
+                
+                margin-bottom: 10px;
+            }
+    label{
+                margin-bottom: 100px;
+                padding: 5px;
+            }
+            body{
+                background-image: url(sunset.jpg)
+            }
+
+
+   </style>
+    <title>Patan Multiple Campus</title>
+    <link rel="icon" href="./images/tulogo.png">
+</head>
+<body style="background-image: url("");">
+    <div class="backgroung-image"></div>
+    <header>
+        <h1>Patan Multiple Campus</h1>
+        <img src="./images/tulogo.png" alt="TU logo" height="150px" width="190px">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="offered_programs.html">Offered Programs</a>
+            <a href="admission.html">Admission</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+        <marquee behavior="scroll" direction="left">
+            <p><b>MA and PGD Entrance Extension Notice  |  Bsc. CSIT Orientation Program  |  BIT- Orientation Program | BCA Admission Notice  | BIT 5th Semester Exam Notice</b></p></marquee>
+    </header>
+<main>
+    <form action="applicationform.php" style="background-color: rgba(0, 255, 255, 0.093);">
+        <fieldset>
+            <legend>Personal Details</legend>
+                <div class="master">
+                    <div class="child">
+                        <label for="name">Student's Full name</label><br>
+                        <label for="fname">Father's Name</label> <br>
+                        <label for="gender">Gender</label><br>
+                        <label for="Handicaped">Handicapped:</label><br>
+                    </div>
+                    <div class="child">
+                        <select name="" id="">
+                            <option value="Mr">Mr.</option>
+                            <option value="Mrs.">Mrs.</option>
+                        </select>
+                        <input type="text" id="name"><br>
+                        <select name="" id="">
+                            <option value="Mr" >Mr.</option>
+                        </select>
+                        <input type="text" id="fname"><br>
+                        Male<input type="radio" name="gender" id="gender">
+                        Female<input type="radio" name="gender" id="gender">
+                        Others<input type="radio" name="gender" id="gender"><br>
+                        <input type="radio" name="Handicaped" id="Handicaped">Yes
+                        <input type="radio" name="Handicaped" id="Handicaped">No <br>                        
+                    </div>
+                    <div class="child">
+                        <label for="mname">Mother's Name</label> <br>
+                        <label for="dob">Date of Birth</label><br>
+                        <label for="religion">Religion</label>
+                      
+                    </div>
+                    <div class="child">
+                        <select name="" id="">
+                            <option value="Mrs.">Mrs.</option>
+                        </select>
+                        <input type="text" id="mname"><br>  
+                        <input type="date" name="dob" id="dob"><br>
+                        <select name="religion" id="religion">
+                            <option value="Hindu">Hindu</option>
+                            <option value="Muslim">Muslim</option>
+                            <option value="Buddhist">Buddhist</option>
+                        </select><br>
+                    </div>
+                </div>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Contact Details</legend>
+            <div class="master">
+                <div class="child">
+                    <label for="mnumber">Mobile Number</label><br>
+                        <label for="adline1">Address Line 1</label> <br>
+                        <label for="city">City</label><br>
+                        <label for="pincode">Pin Code</label>
+                </div>
+                <div class="child">
+                    <input type="number" id="mnumber"><br>
+                    <input type="text" id="adline1"><br>
+                    <input type="text" id="city"><br>
+                    <input type="text" id="pincode"><br>
+    
+                </div>
+    
+                <div class="child">
+                    <label for="email">Email ID</label><br>
+                    <label for="adline2">Address Line 2</label> <br>
+                    <label for="state">State</label><br>
+                </div>
+                <div class="child">
+                    <input type="email" id="email"><br>
+                    <input type="text" id="adline2"><br>
+                    <select name="state" id="state"><br>
+                        <option value="Bagmati">Bagmati</option>
+                        <option value="Lumbini">Lumbini</option>
+                        <option value="Karnali">Karnali</option>
+                    </select><br>
+                   
+                </div>
+            </div>
+    
+        </fieldset>
+        
+</main>
+    <footer>
+        <p>&copy; 2023 Patan Multiple Campus</p>
+        <p>@Bimal Paudel </p>
+    </footer>
+
+</body>
+</html>

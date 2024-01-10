@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link rel="icon" href="./images/pagoda.jpeg">
+    <style>
+        *{
+            /* margin: 0px; */
+            padding: 0px;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        body{
+            background-image: url('./images/bgphoto.jpg');
+            /* filter: blur(5px); */
+            filter: brightness(1);
+                        }
+        .nav1{
+            display: flex;
+            justify-content:center;
+            height: 150px;
+            /* border: 1px solid black; */
+            background-color: #97ccf769;
+            align-items: center;
+        }
+        li a{
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+           margin-right: 50px;
+            padding: 10px;
+        }
+        li a:hover{
+            color: rgba(243, 170, 52, 0.588);
+        }
+        li{
+            display: inline-block;
+        }
+        .mark{
+            /* border: 1px solid rgb(255, 255, 255); */
+            height: 35px;
+            margin-top: 3px;
+            display: flex;
+            align-items: center;
+        }
+        marquee p{
+            color: white;
+            padding-bottom: 5px;
+            font-size: 1.3rem;
+        }
+        .foot{
+            text-align: center;
+            font-size: smaller;
+            font-style: italic;
+            color:white;
+            background-color: #97ccf769;
+        }
+        .foot p a{
+            color: rgba(204, 206, 111, 0.588);
+        }
+        .foot p{
+            padding: 5px 0px;
+        }
+        .destination a:hover{
+            cursor: pointer;
+            color: rgba(248, 169, 59, 0.529);
+
+        }
+        .destination{
+            color:white;
+        }
+        .child:hover{
+            background-color:rgba(173, 234, 236, 0.503);
+
+        }
+        .destination a h1{
+            font-size: 1.3rem;
+            color: rgb(239, 155, 28);
+        }
+        p{
+            font-size: 1.3rem;
+        }
+    </style>
+</head>
+<body><header>
+    <div class="nav1">
+        <!-- <div class="navchild">
+            <img src="./images/pagoda.jpeg" alt="Logo" width="100px" style="position: relative; top: 2px;">
+        </div> -->
+        <div class="navchild">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="heritage.html">Heritage</a></li>
+                <li><a href="hotel-booking.html">Hotel Booking</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mark">
+        <marquee behavior="scroll" direction="left" scrolldelay="100">
+            <p>Roam the Himalayas: Nepal's Majesty, Your Savings - Limited Time Offers!  ||  Adventure Awaits, and So Do Our Special Travel Deals! ||  Nepal's Best Kept Secrets, Unmatched Travel Deals!</p>
+        </marquee>
+    </div>
+</header>
+
+<main>
+<div class="master-destination">
+    <div class="child destination">
+       <a href="changu.html"><h1>Changunarayan Temple</h1></a>
+        <p>This ancient Hindu temple is dedicated to Lord Vishnu and is renowned for its intricate wood and stone carvings. Changunarayan Temple is one of the oldest temples in Nepal and is located on a hilltop near Bhaktapur.</p>
+    </div>
+        <div class="child destination">
+           <a href="swayambhu.html"><h1>Swayambhunath Stupa (Monkey Temple)</h1></a>
+            <p>Perched atop a hill in the Kathmandu Valley, Swayambhunath is a sacred Buddhist stupa adorned with colorful prayer flags and inhabited by playful monkeys. The site offers panoramic views of the valley and is a symbol of harmony between the Buddhist and Hindu communities.</p>
+        </div>
+        <div class="child destination">
+            <a href="pashupati.html"><h1>Pashupatinath Temple</h1></a>
+             <p>Located on the banks of the Bagmati River in Kathmandu, Pashupatinath is a sacred Hindu temple dedicated to Lord Shiva. It is a major pilgrimage site and hosts various festivals. The temple complex also includes cremation ghats and sacred shrines. </p>
+         </div>
+         <div class="child destination">
+            <a href="chitwan.html"><h1>Chitwan National Park (UNESCO World Heritage Site)</h1></a>
+             <p>Situated in the southern part of Nepal, Chitwan National Park is a UNESCO World Heritage Site and one of the best wildlife reserves in Asia. It is home to diverse flora and fauna, including the endangered one-horned rhinoceros, Bengal tigers, elephants, and various bird species. Visitors can enjoy jungle safaris, elephant rides, and bird-watching tours. </p>
+         </div>
+         <div class="child destination">
+            <a href="lumbini.html"><h1>Lumbini (Birthplace of Buddha - UNESCO World Heritage Site)</h1></a>
+             <p>Lumbini is a significant pilgrimage site for Buddhists as it is believed to be the birthplace of Lord Buddha. The sacred garden of Lumbini houses ancient ruins, monasteries, and the Mayadevi Temple. It is a serene and peaceful place where visitors can learn about Buddhism and explore the spiritual heritage of Nepal. </p>
+         </div>
+</div>
+
+</main>
+
+
+<footer>
+    <div class="foot">
+        <p>&copy;<a href="https://instagram.com/me.bimalpdl1" target="_blank"> Bimal Paudel</a></p> 
+        <p>Copyright reserved</p>
+    </div>
+</footer>
+</body>
+</html>
+
