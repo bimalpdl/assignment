@@ -4,8 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        table{
+    width:85%;
+    border-collapse: collapse;
+}
+table th{
+    border: 0px;
+    background-color: rgba(162, 161, 161, 0.35);
+}
+.highlighted{
+    background-color: rgba(162, 161, 161, 0.193);
+
+
+}
+  </style>
+
 </head>
+
 <body>
-    
+    <table border="1px" cellpadding="5px">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        
+        <tr class="highlighted">
+            <td>John</td>
+            <td>Wick</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>32</td>
+        </tr>
+        <tr class="highlighted">
+            <td>Will</td>
+            <td>Smith</td>
+            <td>57</td>
+        </tr>
+    </table>
 </body>
 </html>
