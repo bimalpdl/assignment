@@ -84,7 +84,7 @@ p{
     flex-wrap: wrap;
     width: 100%;
     gap: 5px;
-  margin:25px 0px
+  margin:30px 0px
 }
 
 .heri-lcontainer{
@@ -107,15 +107,17 @@ p{
     background-repeat: no-repeat;
     background-color: #44434342;
     background-blend-mode: multiply;
-    transition: 0.5s ease;
+    transition: 0.3s linear;
 }
 .heri-rcontainer:hover{
     background-color: #fff;
     background-blend-mode: multiply;
     transform: scale(1.01);
-    border-radius: 15px;
-    background-position: top;
+    border-radius: 25px;
+    background-position: bottom;
     box-shadow: 2px 2px 2px #595757a6;
+    /* transform: rotateY(180deg); */
+    cursor: pointer;
 }
 h1 a{
     text-decoration: none;

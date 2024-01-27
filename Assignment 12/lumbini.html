@@ -5,66 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Booking</title>
     <link rel="icon" href="./images/pagoda.jpeg">
+    <link rel="stylesheet" href="style.css">
     <style>
-        *{
-            /* margin: 0px; */
-            padding: 0px;
-            box-sizing: border-box;
-            text-decoration: none;
-            list-style: none;
-        }
-        body{
-            background-image: url('./images/bgphoto.jpg');
-            
-                }
-        .nav1{
+        .bcontainer{
+            margin: 35px 0px;
+            width: 100%;
             display: flex;
-            justify-content: space-around;
-            height: 150px;
-            border: 1px solid black;
-            background-color: #97ccf769;
-            align-items: center;
+            /* border: 2px solid red; */
+            column-gap: 15px;
         }
-        li a{
-            color: rgb(255, 255, 255);
-            font-size: 25px;
-           margin-right: 50px;
-            padding: 10px;
-        }
-        li a:hover{
-            color: rgba(243, 170, 52, 0.588);
-        }
-        li{
-            display: inline-block;
-        }
-        .mark{
-            border: 1px solid rgb(255, 255, 255);
-            height: 35px;
-            margin-top: 3px;
-            display: flex;
-            align-items: center;
-        }
-        marquee p{
+        .intro{
+            flex-basis: 70%;
+            /* border: 2px solid green; */
             color: white;
-            padding-bottom: 5px;
-            font-size: large;
+            padding: 25px;
         }
-        .foot{
-            text-align: center;
-            font-size: smaller;
-            font-style: italic;
-            color:white;
-            background-color: #97ccf769;
-
-
+        .photo{
+            flex-basis: 25%;
+            /* border: 2px solid yellow; */
+            width: 75%;
+            background-image: url('./images/lumbini-bg.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: 0.2s ease;
         }
+
+        .photo:hover{
+          box-shadow: 2px 2px 10px 5px rgba(127, 125, 125, 0.732);
+          border-radius: 5px;
+          background-position: top;
+        }
+        .btn a:hover{
+            color: rgb(245, 191, 92);
+            background-color:rgba(71, 71, 140, 0.848);
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        .btn a{
+            padding: 15px 25px;
+            position: relative;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color:rgba(106, 106, 195, 0.734);
+            border-radius: 10px;
+            left: 55px;
+            top: 0px;
+        }
+        .btn{
+            margin-bottom: 45px;
+        }
+
     </style>
-</head>
+    </head>
 <body><header>
     <div class="nav1">
-        <!-- <div class="navchild">
-            <img src="./images/pagoda.jpeg" alt="Logo" width="100px" style="position: relative; top: 2px;">
-        </div> -->
         <div class="navchild">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -82,8 +77,23 @@
 </header>
 
 <main>
+<div class="bcontainer">
+    <div class="intro">
+        <h1>
+Lumbini(The birth place of Buddha)
+        </h1>
+        <p>
+            Nestled amidst the lush plains of Nepal's Rupandehi District lies Lumbini, a UNESCO World Heritage Site and a beacon of spiritual significance. This idyllic haven is venerated as the birthplace of Siddhartha Gautama, the founder of Buddhism, around 566 BCE. As you step into Lumbini, prepare to be enveloped in an atmosphere of peace, tranquility, and the echoes of ancient wisdom.
+        <p>  
+            Lumbini is more than just a pilgrimage destination; it's a space for personal transformation and discovery. Whether you're a devout Buddhist seeking spiritual solace or a curious traveler yearning for peace, Lumbini awaits with open arms. Let the gentle breeze whisper ancient wisdom, the serene landscapes soothe your soul, and the air of tranquility guide you towards your inner light.
+        </p>
+    </div>
+    <div class="photo"></div>
+</div>
 
-
+<div class="btn">
+    <a href="lumbini-gallery.html">Visit Gallery</a>
+</div>
 </main>
 
 

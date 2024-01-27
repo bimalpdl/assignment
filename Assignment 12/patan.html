@@ -6,12 +6,60 @@
     <title>Hotel Booking</title>
     <link rel="icon" href="./images/pagoda.jpeg">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .bcontainer{
+            margin: 35px 0px;
+            width: 100%;
+            display: flex;
+            /* border: 2px solid red; */
+            column-gap: 15px;
+        }
+        .intro{
+            flex-basis: 70%;
+            /* border: 2px solid green; */
+            color: white;
+            padding: 25px;
+        }
+        .photo{
+            flex-basis: 25%;
+            /* border: 2px solid yellow; */
+            width: 75%;
+            background-image: url('./images/patan4.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: 0.2s ease;
+        }
+
+        .photo:hover{
+          box-shadow: 2px 2px 10px 5px rgba(127, 125, 125, 0.732);
+          border-radius: 5px;
+          background-position: top;
+        }
+        .btn a:hover{
+            color: rgb(245, 191, 92);
+            background-color:rgba(71, 71, 140, 0.848);
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        .btn a{
+            padding: 15px 25px;
+            position: relative;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color:rgba(106, 106, 195, 0.734);
+            border-radius: 10px;
+            left: 55px;
+            top: 0px;
+        }
+        .btn{
+            margin-bottom: 45px;
+        }
+
+    </style>
     </head>
 <body><header>
     <div class="nav1">
-        <!-- <div class="navchild">
-            <img src="./images/pagoda.jpeg" alt="Logo" width="100px" style="position: relative; top: 2px;">
-        </div> -->
         <div class="navchild">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -29,8 +77,24 @@
 </header>
 
 <main>
+<div class="bcontainer">
+    <div class="intro">
+        <h1>
+Patan Durbar Square
+        </h1>
+        <p>
+          A Timeless Tapestry of Art and Architecture
+Nestled amidst the bustling cityscape of Lalitpur, Patan Durbar Square, also known as Sundhara Square, isn't just a collection of ancient buildings; it's a mesmerizing tapestry of art, architecture, and vibrant culture. Stepping into this UNESCO World Heritage Site is like stepping back in time, where intricate carvings whisper tales of a glorious past, the air hums with the rhythm of daily life, and artisans continue to breathe life into centuries-old traditions.
+        <p>  
+            Patan Durbar Square isn't just a tourist destination; it's a living museum, a vibrant community, and a testament to the enduring legacy of Newari craftsmanship. So, get lost in its labyrinthine alleys, soak in the sights and sounds, and let Patan transport you back in time to a world where art and history whisper from every corner.Patan Durbar Square awaits with open arms and boundless treasures to discover.
+        </p>
+    </div>
+    <div class="photo"></div>
+</div>
 
-
+<div class="btn">
+    <a href="patan-gallery.html">Visit Gallery</a>
+</div>
 </main>
 
 

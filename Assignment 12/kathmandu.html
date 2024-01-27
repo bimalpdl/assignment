@@ -6,12 +6,60 @@
     <title>Hotel Booking</title>
     <link rel="icon" href="./images/pagoda.jpeg">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .bcontainer{
+            margin: 35px 0px;
+            width: 100%;
+            display: flex;
+            /* border: 2px solid red; */
+            column-gap: 15px;
+        }
+        .intro{
+            flex-basis: 70%;
+            /* border: 2px solid green; */
+            color: white;
+            padding: 25px;
+        }
+        .photo{
+            flex-basis: 25%;
+            /* border: 2px solid yellow; */
+            width: 75%;
+            background-image: url('./images/bhaktapur4.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: 0.2s ease;
+        }
+
+        .photo:hover{
+          box-shadow: 2px 2px 10px 5px rgba(127, 125, 125, 0.732);
+          border-radius: 5px;
+          background-position: top;
+        }
+        .btn a:hover{
+            color: rgb(245, 191, 92);
+            background-color:rgba(71, 71, 140, 0.848);
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        .btn a{
+            padding: 15px 25px;
+            position: relative;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color:rgba(106, 106, 195, 0.734);
+            border-radius: 10px;
+            left: 55px;
+            top: 0px;
+        }
+        .btn{
+            margin-bottom: 45px;
+        }
+
+    </style>
     </head>
 <body><header>
     <div class="nav1">
-        <!-- <div class="navchild">
-            <img src="./images/pagoda.jpeg" alt="Logo" width="100px" style="position: relative; top: 2px;">
-        </div> -->
         <div class="navchild">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -29,8 +77,23 @@
 </header>
 
 <main>
+<div class="bcontainer">
+    <div class="intro">
+        <h1>
+Kathmandu Durbar Square
+        </h1>
+        <p>
+            Kathmandu Durbar Square, also known as Hanuman Dhoka Durbar Square, is the beating heart of Nepal's capital city. This UNESCO World Heritage site isn't just a cluster of ancient buildings; it's a vibrant mosaic of history, culture, and daily life. Stepping into the square is like stepping into a time capsule, where centuries-old temples and palaces whisper tales of kings and gods, while artisans carve intricate woodwork and street vendors hawk colorful souvenirs.
+        <p>  
+            Prepare to be awestruck by the intricate detailing of the Kasthamandap, a towering seven-story pagoda built entirely from wood, or marvel at the nine-story Nautale Durbar, a testament to the Shah dynasty's power. Hanuman Dhoka itself, meaning "Monkey Gate," holds the secret within its courtyards: the Kumari Ghar, residence of the Kumari, a young girl worshipped as the living embodiment of the Hindu goddess Durga. Be sure to catch a glimpse of her auspicious face appearing at a window during the daily puja.
+        </p>
+    </div>
+    <div class="photo"></div>
+</div>
 
-
+<div class="btn">
+    <a href="bhaktapur-gallery.html">Visit Gallery</a>
+</div>
 </main>
 
 
