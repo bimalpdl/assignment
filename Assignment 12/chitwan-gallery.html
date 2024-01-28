@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Booking</title>
+    <title>Chitwan National Park Gallery</title>
     <link rel="icon" href="./images/pagoda.jpeg">
     <link rel="stylesheet" href="style.css">
     <style>
-            .gallery {
+        .gallery {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
@@ -23,50 +23,80 @@
             cursor: pointer;
         }
 
+        .gallery img:hover {
+            box-shadow: 2px 2px 10px 5px rgba(127, 125, 125, 0.732);
+        }
 
         h1 {
             text-align: center;
             color: #fff8f8;
         }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
     </style>
-    </head>
-<body><header>
-    <div class="nav1">
-        <div class="navchild">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="heritage.html">Heritage</a></li>
-                <li><a href="hotel-booking.html">Hotel Booking</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-            </ul>
+</head>
+<body>
+
+    <header>
+        <div class="nav1">
+            <div class="navchild">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="heritage.html">Heritage</a></li>
+                    <li><a href="hotel-booking.html">Hotel Booking</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div class="mark">
-        <marquee behavior="scroll" direction="left" scrolldelay="100">
-            <p>Roam the Himalayas: Nepal's Majesty, Your Savings - Limited Time Offers!  ||  Adventure Awaits, and So Do Our Special Travel Deals! ||  Nepal's Best Kept Secrets, Unmatched Travel Deals!</p>
-        </marquee>
-    </div>
-</header>
+        <div class="mark">
+            <marquee behavior="scroll" direction="left" scrolldelay="100">
+                <p>Roam the Himalayas: Nepal's Majesty, Your Savings - Limited Time Offers!  ||  Adventure Awaits, and So Do Our Special Travel Deals! ||  Nepal's Best Kept Secrets, Unmatched Travel Deals!</p>
+            </marquee>
+        </div>
+    </header>
 
-<main>
-    <h1>Chitwan National Park Gallery</h1>
+    <main>
+        <h1>Chitwan National Park Gallery</h1>
 
-    <div class="gallery">
-        <img src="./images/chitwan-bg.jpg" alt="Photo 1">
-        <img src="./images/" alt="Photo 2">
-        <img src="./images" alt="Photo 3">
-        <img src="./images" alt="Photo 4">
-        <img src="./images" alt="Photo 5">
-        <img src="./images" alt="Photo 6">
-    </div>
-</main>
+        <div class="gallery">
+            <img src="./images/chitwan-bg.jpg" alt="Photo 1">
+            <img src="./images/chitwan1.jpg" alt="Photo 2">
+            <img src="./images/chitwan2.jpg" alt="Photo 3">
+            <img src="./images/chitwan3.jpg" alt="Photo 4">
+            <img src="./images/chitwan4.jpg" alt="Photo 5">
+            <img src="./images/chitwan5.jpg" alt="Photo 6">
+        </div>
+    </main>
 
+    <footer>
+        <div class="foot">
+            <p>&copy;Bimal Paudel</p> 
+            <p>Copyright reserved</p>
+        </div>
+    </footer>
 
-<footer>
-    <div class="foot">
-        <p>&copy;Bimal Paudel</p> 
-        <p>Copyright reserved</p>
-    </div>
-</footer>
 </body>
 </html>
